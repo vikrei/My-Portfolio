@@ -463,3 +463,99 @@ SKILLS SECTION
     height:100%;
     background:var(--accent-color);
 }
+
+/*
+
+
+CONTACT SECTION
+
+
+*/
+
+.contact{
+    padding:120px 60px;
+    border-top:1px solid var(--border-color);
+}
+
+.contact-content{
+    max-width:1200px;
+}
+
+.contact-small{
+    font-size:0.9rem;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.contact h2{
+    font-size:5rem;
+    font-weight:500;
+    margin-bottom:40px;
+}
+
+.contact-email{
+    display:inline-block;
+
+    font-size:2rem;
+
+    color:var(--text-color);
+
+    text-decoration:none;
+
+    margin-bottom:60px;
+
+    border-bottom:1px solid var(--text-color);
+}
+
+.contact-links{
+    display:flex;
+    gap:50px;
+}
+
+.contact-links a{
+    color:var(--text-color);
+    text-decoration:none;
+    font-size:1.1rem;
+}
+
+.contact-links a:hover{
+    opacity:0.6;
+}
+
+.contact-form{
+    max-width:700px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:18px;
+    border:1px solid var(--border-color);
+    background:transparent;
+    font-size:1rem;
+    font-family:inherit;
+}
+
+.contact-form textarea{
+    min-height:180px;
+    resize:none;
+}
+
+.contact-form button{
+    width:250px;
+    height:60px;
+    border:none;
+    cursor:pointer;
+
+    background:var(--accent-color);
+    color:white;
+
+    text-transform:uppercase;
+}
+
+#formMessage{
+    margin-top:10px;
+    font-weight:500;
+}
