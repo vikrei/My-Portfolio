@@ -1,0 +1,393 @@
+:root {
+
+  --bg-color: #F7F3ED;
+
+  --text-color: #111111;
+
+  --accent-color: #5F7F70;
+
+  --border-color: #A8A8A8;
+
+  --card-color: #FFFFFF;
+
+  --nav-height: 80px;
+
+}
+
+/* 
+
+
+NAVBAR
+
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+.navbar{
+
+    height: var(--nav-height);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+
+    border-bottom:1px solid var(--border-color);
+
+    background: var(--bg-color);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:2rem;
+    font-weight:500;
+
+}
+
+nav{
+
+    display:flex;
+    gap:50px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:var(--text-color);
+
+    font-size:0.95rem;
+    text-transform:uppercase;
+
+    position:relative;
+
+}
+
+nav a:hover{
+
+    opacity:0.7;
+
+}
+
+.menu-icon{
+
+    font-size:2rem;
+    cursor:pointer;
+
+}
+
+/*
+
+
+HERO SECTION
+
+
+*/
+
+.hero{
+
+    min-height: calc(100vh - var(--nav-height));
+
+    display:grid;
+
+    grid-template-columns: 1.2fr 1fr 0.9fr;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+.hero-left,
+.hero-right{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+
+    filter: brightness(90%);
+    filter: saturate(90%);
+
+}
+
+.hero-left{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    margin-left:100px;
+
+}
+
+.hero-left h1{
+
+    font-size:7rem;
+    line-height:0.9;
+    font-weight:500;
+
+    margin-bottom:40px;
+
+}
+
+.hero-left h2{
+
+    font-size:1.8rem;
+    font-weight:500;
+
+    margin-bottom:30px;
+
+}
+
+.hero-left p{
+
+    max-width:500px;
+
+    font-size:1.1rem;
+    line-height:1.6;
+
+    margin-bottom:40px;
+
+}
+
+.hero-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:260px;
+    height:60px;
+
+    background:var(--accent-color);
+
+    color:white;
+
+    text-decoration:none;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    transition:0.3s;
+
+}
+
+.hero-btn:hover{
+
+    opacity:0.85;
+
+}
+
+.hero-right{
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.line{
+
+    width:250px;
+    height:1px;
+
+    background:var(--border-color);
+
+    margin-bottom:50px;
+
+}
+
+.hero-right h3{
+
+    margin-bottom:25px;
+
+    font-size:1rem;
+
+    letter-spacing:1px;
+
+}
+
+.hero-right p{
+
+    line-height:1.8;
+
+    max-width:320px;
+
+}
+
+.scroll-box{
+
+    margin-top:100px;
+
+}
+
+.scroll-box span{
+
+    display:block;
+
+    margin-bottom:20px;
+
+}
+
+.arrow{
+
+    font-size:3rem;
+
+}
+
+/* 
+
+
+PROJECTS SECTION
+
+
+*/
+.projects{
+
+    padding:70px 60px;
+
+    border-bottom:1px solid var(--border-color);
+
+}
+
+.projects-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+.projects-header h2{
+
+    font-size:2rem;
+    font-weight:500;
+
+}
+
+.projects-header a{
+
+    text-decoration:none;
+    color:var(--text-color);
+
+    text-transform:uppercase;
+
+}
+
+.projects-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+/*
+
+
+PROJECT CARD
+
+
+*/
+
+.project-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+}
+
+.project-card img{
+
+    width:100%;
+    height:400px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:0.4s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/*
+
+
+PROJECT CARD TEXT
+
+
+*/
+
+.project-info{
+
+    position:absolute;
+
+    bottom:25px;
+    left:25px;
+
+    color:white;
+
+}
+
+.project-info span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+}
+
+.project-info h3{
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.project-info p{
+
+    font-size:0.9rem;
+
+    text-transform:uppercase;
+
+}
