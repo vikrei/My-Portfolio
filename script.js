@@ -1,3 +1,27 @@
+                                    // MOBILE MENU
+
+const menuBtn = document.querySelector(".menu-icon");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeBtn = document.querySelector(".close-menu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+});
+
+const menuLinks = document.querySelectorAll(".mobile-menu a");
+
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+    });
+});
+
+                                    // FORM VALIDATION
+
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", function(event){
